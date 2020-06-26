@@ -19,7 +19,10 @@ module ALU_Control
 				endcase
 				end
 			2'b01:
-				Operation = 4'b0110;
+				//4'b0000:	//beq
+				Operation = 4'b0110; //subtraction
+				//4'b0001:	//bne
+				//4'b0101:	//bge
 				
 			2'b10:
 				begin
