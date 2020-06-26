@@ -2,6 +2,7 @@ module ALU_64_bit
 (
 	input [63:0]a, [63:0]b, [3:0]ALUOp,
 	output reg Zero,
+	output reg Sign,
 	output reg [63:0]Result
 );
 
@@ -15,7 +16,10 @@ always@(a or b or ALUOp)
             4'b0010:
 			Result = a + b;    // addition
             4'b0110:
+			begin
 			Result = a - b;    // subtraction
+			Sign = Result[63];
+			end
 			4'b1100:
 			Result = ~(a | b);	// NOR
 			4'b1111:
