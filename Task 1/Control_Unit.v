@@ -51,6 +51,17 @@ module Control_Unit
 			MemWrite = 1'b0;
 			ALUSrc = 1'b0;
 			RegWrite = 1'b0;
+			
+			//addi
+			7'b0010011:
+			begin
+			Branch = 1'b0;
+			MemRead = 1'b1;
+			MemtoReg = 1'bx;
+			ALUOp = 2'b00;
+			MemWrite = 1'b0;
+			ALUSrc = 1'b1;
+			RegWrite = 1'b1;
 			end
 		endcase
 	end
