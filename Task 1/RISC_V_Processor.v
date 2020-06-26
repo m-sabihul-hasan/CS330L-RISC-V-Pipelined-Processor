@@ -129,7 +129,6 @@ module RISC_V_Processor
 
 	wire zero;
 	wire [63:0] result;
-	wire sign;
 
 	ALU_64_bit ALU
 	(
@@ -137,23 +136,11 @@ module RISC_V_Processor
 		.b(mux_1_out),
 		.ALUOp(operation),
 		.Zero(zero),
-		.Sign(sign),
 		.Result(result)
 	);
 	
-	wire branch_sel;
-	
-	Branch_Control BC
-	(
-		.Branch(branch),
-		.Zero(zero),
-		.Sign(sign),
-		.Funct(funct),
-		.sel(branch_sel)	
-	);
-
 	wire mux2_sel;
-	assign mux2_sel = branch_sel;
+	assign mux2_sel = branch & zero;
 
 	mux_2x1 MUX_2
 	(
