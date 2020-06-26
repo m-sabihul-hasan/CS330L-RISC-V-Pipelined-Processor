@@ -18,6 +18,7 @@ always@(a or b or ALUOp)
 			Result = a - b;    // subtraction
 			4'b1100:
 			Result = ~(a | b);	// NOR
+			//Result = a << b
         endcase
 		if (Result == 64'd0)
 			Zero = 1;
