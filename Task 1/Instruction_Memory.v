@@ -47,10 +47,10 @@ reg [7:0] address[131:0];
 	address[23] = 8'b00000000;
 	
 	//7
-	address[24] = 8'b00010011;    
+	address[24] = 8'b00010011;       
 	address[25] = 8'b00000101;
-	address[26] = 8'b00000000;
-	address[27] = 8'b00010000;
+	address[26] = 8'b01000000;
+	address[27] = 8'b00000000;
 	
 	//8
 	address[28] = 8'b10010011;    
