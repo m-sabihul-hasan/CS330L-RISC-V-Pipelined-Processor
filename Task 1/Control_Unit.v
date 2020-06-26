@@ -56,6 +56,7 @@ module Control_Unit
 			MemWrite = 1'b0;
 			ALUSrc = 1'b0;
 			RegWrite = 1'b0;
+			end
 			
 			//addi
 			7'b0010011:
@@ -67,8 +68,8 @@ module Control_Unit
 			MemWrite = 1'b0;
 			ALUSrc = 1'b1;
 			RegWrite = 1'b1;
-			
 			end
+			
 		endcase
 	end
 endmodule
