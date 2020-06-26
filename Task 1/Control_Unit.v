@@ -22,7 +22,7 @@ module Control_Unit
 			RegWrite = 1'b1;
 			end
 			
-			//
+			//ld
 			7'b0000011:
 			begin
 			Branch = 1'b0;
@@ -34,7 +34,7 @@ module Control_Unit
 			RegWrite = 1'b1;
 			end
 			
-			//
+			//sd
 			7'b0100011:
 			begin
 			Branch = 1'b0;
@@ -46,7 +46,7 @@ module Control_Unit
 			RegWrite = 1'b0;
 			end
 			
-			//
+			//beq
 			7'b1100011:
 			begin
 			Branch = 1'b1;
@@ -67,6 +67,7 @@ module Control_Unit
 			MemWrite = 1'b0;
 			ALUSrc = 1'b1;
 			RegWrite = 1'b1;
+			
 			end
 		endcase
 	end
