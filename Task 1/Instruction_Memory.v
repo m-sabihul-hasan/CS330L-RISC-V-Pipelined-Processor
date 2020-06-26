@@ -17,10 +17,10 @@ reg [7:0] address[131:0];
 	address[3] = 8'b00000000;
 	
 	//2
-	address[4] = 8'b00100011;   
-	address[5] = 8'b00100000;
+	address[4] = 8'b00100011;      
+	address[5] = 8'b00110010;
 	address[6] = 8'b01010000;
-	address[7] = 8'b00010000;
+	address[7] = 8'b00000000;
 	
 	//3
 	address[8] = 8'b10010011;    
@@ -29,10 +29,10 @@ reg [7:0] address[131:0];
 	address[11] = 8'b00000000;
 	
 	//4
-	address[12] = 8'b00100011;
-	address[13] = 8'b00100010;
+	address[12] = 8'b00100011;    
+	address[13] = 8'b00110110;
 	address[14] = 8'b01010000;
-	address[15] = 8'b00010000;
+	address[15] = 8'b00000000;
 	
 	//5
 	address[16] = 8'b10010011;    
@@ -41,10 +41,10 @@ reg [7:0] address[131:0];
 	address[19] = 8'b00000000;
 	
 	//6
-	address[20] = 8'b00100011;    
-	address[21] = 8'b00100100;
+	address[20] = 8'b00100011;       
+	address[21] = 8'b00111010;
 	address[22] = 8'b01010000;
-	address[23] = 8'b00010000;
+	address[23] = 8'b00000000;
 	
 	//7
 	address[24] = 8'b00010011;    
@@ -101,15 +101,15 @@ reg [7:0] address[131:0];
 	address[59] = 8'b00000010;
 	
 	//16
-	address[60] = 8'b10010011;       
+	address[60] = 8'b10010011;          
 	address[61] = 8'b00010010;
-	address[62] = 8'b00101001;
+	address[62] = 8'b00111001;
 	address[63] = 8'b00000000;
 	
 	//17
-	address[64] = 8'b00010011;       
+	address[64] = 8'b00010011;          
 	address[65] = 8'b10010011;
-	address[66] = 8'b00101001;
+	address[66] = 8'b00111001;
 	address[67] = 8'b00000000;
 	
 	//18
@@ -125,14 +125,14 @@ reg [7:0] address[131:0];
 	address[75] = 8'b00000000;
 	
 	//20
-	address[76] = 8'b00000011;
-	address[77] = 8'b10101110; 
+	address[76] = 8'b00000011;	   
+	address[77] = 8'b10111110; 
 	address[78] = 8'b00000010; 
 	address[79] = 8'b00000000;
 
 	//21
-	address[80] = 8'b10000011;
-	address[81] = 8'b00101110; 
+	address[80] = 8'b10000011;	  
+	address[81] = 8'b00111110; 
 	address[82] = 8'b00000011; 
 	address[83] = 8'b00000000;
 
@@ -161,14 +161,14 @@ reg [7:0] address[131:0];
 	address[99] = 8'b00000001;
 	
 	//26
-	address[100] = 8'b00100011;
-	address[101] = 8'b10100000; 
+	address[100] = 8'b00100011;	   
+	address[101] = 8'b10110000; 
 	address[102] = 8'b11000010; 
 	address[103] = 8'b00000001;
 	
 	//27
-	address[104] = 8'b00100011;
-	address[105] = 8'b00100000; 
+	address[104] = 8'b00100011;	   
+	address[105] = 8'b00110000; 
 	address[106] = 8'b11010011; 
 	address[107] = 8'b00000001;
 
