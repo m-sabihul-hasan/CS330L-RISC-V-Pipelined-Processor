@@ -9,6 +9,8 @@ module Control_Unit
 	always @(*)
 	begin 
 		case (Opcode)
+			
+			//add
 			7'b0110011:
 			begin
 			Branch = 1'b0;
@@ -20,6 +22,7 @@ module Control_Unit
 			RegWrite = 1'b1;
 			end
 			
+			//
 			7'b0000011:
 			begin
 			Branch = 1'b0;
@@ -31,6 +34,7 @@ module Control_Unit
 			RegWrite = 1'b1;
 			end
 			
+			//
 			7'b0100011:
 			begin
 			Branch = 1'b0;
@@ -42,6 +46,7 @@ module Control_Unit
 			RegWrite = 1'b0;
 			end
 			
+			//
 			7'b1100011:
 			begin
 			Branch = 1'b1;
