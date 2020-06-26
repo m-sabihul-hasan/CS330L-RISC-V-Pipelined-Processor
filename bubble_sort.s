@@ -9,13 +9,10 @@ sw x5, 0x108(x0)
 
 addi x10, x0, 0x100 #a pointer
 addi x11, x0, 3 #len
-#jal x1, bubble
-#beq x0, x0, FinalExit
 
 bubble: bne x10, x0, else
 bne x11, x0, else
 beq x0, x0, FinalExit
-#jalr x0, 0(x1)
 
 
 else: addi x18, x0, 0 #i  
