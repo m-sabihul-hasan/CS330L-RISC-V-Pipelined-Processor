@@ -2,7 +2,6 @@ module Branch_Control
 (
 	input Branch,
 	input Zero,
-	input Sign,
 	input [3:0] Funct,
 	output reg sel
 );
@@ -17,7 +16,7 @@ always @(posedge Branch)
 		sel = ~Zero;
 		
 		4'b0101:
-		sel = ~Sign;
+		sel = ~;
 	endcase
 	end
 	
