@@ -26,6 +26,7 @@ module ALU_Control
 				4'b0001:
 					Operation = 4'b1111;	//Shift left
 				endcase
+				end
 			2'b01:
 				Operation = 4'b0110;
 				
