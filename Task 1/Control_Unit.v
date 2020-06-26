@@ -9,7 +9,6 @@ module Control_Unit
 	always @(*)
 	begin 
 		case (Opcode)
-			
 			//add
 			7'b0110011:
 			begin
